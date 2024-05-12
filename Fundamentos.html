@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Rodamiento</title>
+    <style>
+        /* Estilos aquí */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #161616;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .seccion {
+            background-color: #161616;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #fff;
+        }
+        
+        p {
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .formula {
+            color: #f90;
+            font-style: italic;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 450px;
+        }
+
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            overflow: hidden;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .nav-btn {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .nav-btn:focus {
+            outline: none;
+        }
+
+        .quiz-container {
+            background-color: #202020;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .option {
+            margin-bottom: 5px;
+        }
+
+        .option input {
+            margin-right: 10px;
+        }
+
+        .btn-submit {
+            background-color: #f90;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            background-color: #ffbb33;
+        }
+
+        .response {
+            margin-top: 10px;
+            color: #ddd;
+        }
+
+        .glosario-container {
+            background-color: #222222;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .term {
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .definition {
+            color: #ddd;
+        }
+
+        .term:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="introduccion" class="seccion">
+            <h2>Fundamentos de Rodamiento</h2>
+            <p>Los rodamientos son componentes mecánicos diseñados para facilitar el movimiento relativo entre dos partes que están en contacto y que necesitan rotar entre sí. Son esenciales en una amplia gama de aplicaciones, desde maquinaria industrial hasta vehículos y equipos electrónicos.</p> <p>La función principal de un rodamiento es reducir la fricción entre las superficies en contacto y proporcionar soporte para cargas radiales y axiales. Esto se logra mediante la introducción de elementos rodantes, como bolas o rodillos.</p> <br>
+            <img src="https://i.postimg.cc/x8wV4wwc/vernier-caliper-lying-on-drafting-paper-with-bearings-and-small-gear-t20-09add-V.jpg" alt="Rodamientos">
+        </section>
+
+        <section id="tipos" class="seccion">
+            <h2>Tipos de Rodamientos</h2>
+            <p>Existen varios tipos de rodamientos, cada uno diseñado para aplicaciones específicas. Algunos de los tipos más comunes son:</p> <br>
+            
+                <li><strong>Rodamientos de bolas</strong></li>
+                <p>Estos rodamientos utilizan bolas metálicas para reducir la fricción. Son adecuados para cargas ligeras a moderadas y se utilizan comúnmente en aplicaciones de alta velocidad, como motores eléctricos y herramientas eléctricas.</p> <p>Hay muchos tipos diferentes de rodamientos de bolas disponibles, cada uno con sus propias ventajas y desventajas. Los tipos más comunes incluyen rodamientos rígidos de bolas, rodamientos de bolas de contacto angular, rodamientos de bolas autoalineables y rodamientos de bolas de ranura profunda. </p> <p><strong>Aplicaciones de los rodamientos de bolas</strong></p> <p>Algunas de las principales aplicaciones de los rodamientos de bolas: <li>Automoción</li> <li>Electrodomésticos</li> <li>Equipos deportivos</li> <li>Aeronáutica</li></p> <br>
+                <img src="https://i.postimg.cc/TPKMTYTp/P-DGBB-Pressed-Steel-Cage-Open-500x500.jpg" alt="Rodamientos"> <br> <br>
+                <li><strong>Rodamientos de rodillos</strong></li>
+                <p>En lugar de bolas, estos rodamientos utilizan cilindros metálicos (rodillos) para soportar cargas radiales y axiales más pesadas. Los rodillos distribuyen la carga de manera más uniforme, lo que los hace ideales para aplicaciones con cargas pesadas, como en la industria automotriz y la maquinaria pesada.</p> <p>Los rodamientos de rodillos cilíndricos se fabrican en diversos diseños para adaptarse a diferentes aplicaciones: simples con una sola corona de rodillos, dobles con dos coronas separadas, con aperturas para mejor refrigeración, de alta precisión, y también versiones especialmente diseñadas para soportar principalmente cargas axiales. Esta variedad de tipos permite seleccionar el rodamiento más adecuado en términos de capacidad de carga, rigidez y durabilidad requeridas en cada caso.</p> <p><strong>Aplicaciones de los rodamientos de rodillo</strong></p> <p>Los rodamientos de rodillos cilíndricos tienen una amplia gama de aplicaciones en diversos sectores industriales debido a sus características técnicas: <li>Maquinaria pesada</li> <li>Maquinaria rotativa</li> <li>Equipos de transmisión</li> <li>Equipos ferroviarios</li></p> <br>
+                <img src="https://i.postimg.cc/mD9vFXz4/P-TRB-Pressed-Steel-Cage-Open-874x555.jpg" alt="Rodamientos"> <br> <br>
+                <li><strong>Rodamientos de agujas</strong></li>
+                <p>Estos rodamientos utilizan cilindros delgados en lugar de bolas o rodillos más grandes. Son capaces de manejar cargas radiales muy altas en espacios reducidos y se utilizan en aplicaciones como motores de automóviles y transmisiones.</p> <p>Los principales tipos de rodamientos de agujas son los rodamientos de agujas cilíndricos, rodamientos de agujas cónicos, rodamientos de agujas con brida, rodamientos de agujas con separador y rodamientos de agujas con jaula.</p> <p><strong>Aplicaciones de los rodamientos de agujas</strong></p> <p> <li>Automoción.</li>  <li>Maquinaria industrial.</li> <li>Equipos de construcción.</li> <li>Electrodomésticos y equipos eléctricos.</li></p> <br>
+                <img src="https://i.postimg.cc/Hszf57xr/rodamiento-agujas-1.jpg" alt="Rodamientos"> <br> <br>
+                <li><strong>Rodamientos de contacto angular</strong></li>
+                <p>Los rodamientos de contacto angular son un tipo de rodamiento que está diseñado para soportar cargas combinadas, tanto radiales como axiales. Tienen pistas de rodadura que están desplazadas entre sí en un ángulo con respecto al eje del rodamiento. Esto les permite soportar cargas axiales en una dirección, mientras que también pueden soportar cargas radiales.</p>  <p>Hay dos tipos principales de rodamientos de contacto angular: de una hilera y de dos hileras. Los rodamientos de una hilera tienen una sola hilera de bolas, mientras que los rodamientos de dos hileras tienen dos hileras de bolas. Los rodamientos de dos hileras pueden soportar cargas axiales mayores que los rodamientos de una hilera.</p> <p><strong>Aplicaciones de los rodamientos de contacto angular</strong></p> <p>Los rodamientos de contacto angular se utilizan en una amplia variedad de aplicaciones, incluyendo:
+
+                    <li>Cajas de cambios.</li>
+                    <li>Motores eléctricos.</li>
+                    <li>Bombas.</li>
+                    <li>Compresores.</li>
+                    <li>Máquinas herramienta.</li> </p> <br>
+                <img src="https://i.postimg.cc/sgBwXBZd/image.png" alt="Rodamientos"> <br> <br>
+                <li><strong>Rodamientos axiales</strong></li>
+                <p>Los rodamientos axiales de bolas son un tipo de rodamiento que está diseñado para <strong>soportar cargas axiales</strong>, es decir, fuerzas que actúan a lo largo del eje del rodamiento. Están formados por una serie de bolas que se encuentran entre dos pistas de rodadura, una estacionaria y otra giratoria. </p> <p>Los rodamientos son componentes mecánicos diseñados para facilitar el movimiento relativo entre dos partes que están en contacto y que necesitan rotar entre sí. Son esenciales en una amplia gama de aplicaciones, desde maquinaria industrial hasta vehículos y equipos electrónicos.</p> <p><strong>Aplicaciones de los rodamientos axiales de bolas</strong></p> <p> Los rodamientos axiales de bolas se utilizan en una amplia variedad de aplicaciones, incluyendo:
+
+                <li>Cajas de cambios.</li>
+                <li>Bombas.</li>
+                <li>Ventiladores.</li>
+                <li>Compresores.</li>
+                <li>Máquinas herramienta.</li></p> <br>
+                <img src="https://i.postimg.cc/t4VNbLL9/image.png" alt="Tipos de Rodamientos">
+        </section>
+
+        <section id="formulas" class="seccion">
+            <h2>Fórmulas y Conceptos Básicos</h2>
+            <p>Algunas fórmulas y conceptos básicos importantes en el estudio de rodamientos incluyen:</p>
+            <ul>
+                <li>Velocidad de deslizamiento: \( V = \pi \times d \times n \) </li>
+                <li>Carga dinámica básica: \( C_{\text{básico}} = \frac{{P \times 10^6}}{{10^3 \times L_{10}^p}} \) </li>
+                <li>Carga estática básica: \( C_{\text{estática}} = \frac{{P \times 10^6}}{{10^3 \times L_{5}^p}} \) </li>
+            </ul>
+            <p>Donde:</p>
+            <ul>
+                <li>\( V \): Velocidad de deslizamiento (mm/min)</li>
+                <li>\( d \): Diámetro del rodamiento (mm)</li>
+                <li>\( n \): Velocidad de rotación (RPM)</li>
+                <li>\( P \): Carga (N)</li>
+                <li>\( L_{10} \): Vida nominal de rodamiento (millones de revoluciones)</li>
+                <li>\( L_{5} \): Vida nominal de fatiga (millones de revoluciones)</li>
+                <li>\( p \): Exponente de vida de rodamiento (usualmente 3 para rodamientos de bolas y 10/3 para rodamientos de rodillos)</li>
+            </ul>
+            <img src="formulas_rodamientos.jpg" alt="Fórmulas de Rodamientos">
+        </section>
+
+        <section id="glosario" class="seccion">
+            <h2>Glosario de Términos</h2>
+            <div class="glosario-container">
+                <div class="term">Rodamiento</div>
+                <div class="definition">Elemento mecánico que reduce la fricción entre dos superficies en movimiento relativo.</div> <br>
+                <div class="term">Velocidad de Deslizamiento</div>
+                <div class="definition">Velocidad relativa entre las superficies de contacto de un rodamiento.</div> <br>
+                <div class="term">Carga Dinámica Básica</div>
+                <div class="definition">Carga que un rodamiento puede llevar durante un número especificado de revoluciones antes de fallar debido a fatiga.</div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Código JavaScript para funcionalidades interactivas
+        function submitQuiz() {
+            var answers = [];
+            var questions = document.querySelectorAll('.question');
+            questions.forEach((question, index) => {
+                var selectedOption = question.querySelector('input[name="q'+ (index + 1) +'"]:checked');
+                if (selectedOption) {
+                    answers.push(selectedOption.value);
+                } else {
+                    answers.push(null);
+                }
+            });
+
+            var responseDiv = document.getElementById('response');
+            var correctAnswers = ['b', 'a']; // Respuestas correctas
+            var correctCount = 0;
+
+            answers.forEach((answer, index) => {
+                if (answer === correctAnswers[index]) {
+                    correctCount++;
+                }
+            });
+
+            if (correctCount === answers.length) {
+                responseDiv.textContent = "¡Todas las respuestas son correctas!";
+                responseDiv.style.color = "#0f0";
+            } else {
+                responseDiv.textContent = "Respuestas incorrectas. Inténtalo de nuevo.";
+                responseDiv.style.color = "#f00";
+            }
+        }
+
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let counter = 1;
+        const size = slides[0].clientWidth;
+
+        slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+        nextBtn.addEventListener('click', () => {
+            if (counter >= slides.length - 1) return;
+            slider.style.transition = "transform 0.5s ease-in-out";
+            counter++;
+            slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (counter <= 0) return;
+            slider.style.transition = "transform 0.5s ease-in-out";
+            counter--;
+            slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        });
+
+        slider.addEventListener('transitionend', () => {
+            if (slides[counter].id === 'lastClone') {
+                slider.style.transition = "none";
+                counter = slides.length - 2;
+                slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+            }
+            if (slides[counter].id === 'firstClone') {
+                slider.style.transition = "none";
+                counter = slides.length - counter;
+                slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+            }
+        });
+
+        const terms = document.querySelectorAll('.term');
+        terms.forEach(term => {
+            term.addEventListener('click', () => {
+                term.classList.toggle('expanded');
+                const definition = term.nextElementSibling;
+                definition.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
