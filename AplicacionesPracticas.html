@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Rodamiento</title>
+    <style>
+        /* Estilos aquí */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .seccion {
+            padding: 11px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+    
+        }
+
+        h2 {
+            color: #ff5252;
+            font-size: 16px;
+            cursor: pointer; /* Agregado para el efecto de clic */
+            display: inline-block; /* Añadido */
+        }
+
+        h3 {
+            color: #bfbfbf;
+            font-size: 16px;
+            margin-top: 0;
+            display: inline-block; /* Añadido */
+            margin-right: 10px; /* Añadido */
+        }
+
+        strong{
+            color: #ff5252;
+        }
+        
+        p {
+            color: #ddd;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        li {
+            margin-bottom: 5px;
+            color: rgb(211, 207, 201);
+            font-size: 14px;
+        }
+
+        .formula {
+            color: #f90;
+            font-style: italic;
+        }
+
+        .img1 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 440px;
+            opacity: 81%;
+        }
+
+        .img2 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 140px;
+            opacity: 600%;
+            margin-left: 0px;
+        }
+
+        .img3 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 108px;
+            opacity: 600%;
+            margin-left: 0px;
+        }
+
+        .img4 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 90px;
+            opacity: 600%;
+            margin-left: 0px;
+        }
+
+        .response {
+            margin-top: 10px;
+            color: #ddd;
+        }
+
+        hr{
+            border: none; /* Elimina el borde predeterminado */
+            height: 1px; /* Define la altura de la línea */
+            background-color: #4f4f4f; /* Color de fondo de la línea */
+            width: 90%;
+        }
+
+        .term:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .str1{
+            color: #ffffffbf;
+        }
+
+        /* Estilos para el menú desplegable */
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out; /* Cambio de velocidad de transición */
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"] + label {
+            cursor: pointer;
+            position: relative; /* Añadido */
+        }
+
+        input[type="checkbox"]:checked + label + .content {
+            max-height: 100%; /* Ajusta según el contenido máximo */
+        }
+
+        .arrow-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease; /* Añadido */
+        }
+
+        input[type="checkbox"]:checked + label .arrow-icon {
+            transform: translateY(-50%) rotate(180deg); /* Añadido */
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="introduccion" class="seccion">
+            <input type="checkbox" id="toggle1">
+            <label for="toggle1"><h3>Módulo 1</h3><h2>Aplicaciones practicas</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p>Los sistemas de rodamiento tienen una amplia gama de aplicaciones prácticas en diversas industrias y campos:</p>
+                <br><img class="img1" src="https://i.postimg.cc/jdRZ05YT/image.png" alt=""><br>
+                <p><strong>1. Industria automotriz</strong></p>
+                <p>Los rodamientos se utilizan en automóviles para permitir el movimiento suave de las ruedas, así como en los motores, transmisiones y otros componentes. Esto ayuda a reducir la fricción y el desgaste, lo que mejora la eficiencia y la durabilidad de los vehículos.</p>
+            
+                <br> <img class="img1" src="https://i.postimg.cc/sXZ0X0TR/image.png" alt="Rodamientos">
+<br>
+                <p><strong>Maquinaria industrial</strong></p>
+                <p>En la fabricación y operación de maquinaria industrial, los rodamientos se utilizan en una amplia variedad de aplicaciones, desde motores eléctricos hasta cintas transportadoras y equipo pesado. Proporcionan soporte y facilitan el movimiento en condiciones de alta carga y velocidad.</p>
+
+                <br> <img class="img1" src="https://i.postimg.cc/t4NLFfdd/image.png" alt=""> <br>
+
+                <p><strong>Industria aeroespacial</strong></p>
+                <p>En la industria aeroespacial, donde la precisión, la fiabilidad y el peso son críticos, los rodamientos juegan un papel fundamental en una variedad de aplicaciones, incluidas turbinas de avión, sistemas de control de vuelo y mecanismos de puertas.</p>
+                <br> <img class="img1" src="https://i.postimg.cc/R00bK0Z9/image.png" alt=""> <br>
+
+                <p><strong>Equipos médicos</strong></p>
+                <p>Los dispositivos médicos, como equipos de resonancia magnética, tomografías computarizadas y equipos quirúrgicos, dependen de rodamientos para garantizar un funcionamiento suave y preciso.</p>
+
+                <br> <img class="img1" src="https://i.postimg.cc/mDzXp695/image.png" alt=""> <br>
+
+                <p><strong>Electrodomésticos</strong></p>
+                <p>En electrodomésticos como lavadoras, secadoras, refrigeradores y ventiladores, los rodamientos permiten el funcionamiento eficiente de los motores y otros componentes móviles, reduciendo el ruido y la vibración.</p>
+
+                <br> <img class="img1" src="https://i.postimg.cc/wMDWgy05/image.png" alt=""> <br>
+
+                <p><strong>Turbinas eólicas</strong></p>
+                <p>En la generación de energía eólica, los rodamientos se utilizan en las turbinas para permitir la rotación de las palas y convertir la energía cinética del viento en energía eléctrica de manera eficiente.</p>
+
+                <br> <img class="img1" src="https://i.postimg.cc/jSx8YjNN/image.png" alt=""> <br>
+
+                <p><strong>Robótica y automatización</strong></p>
+                <p> En robots industriales y sistemas automatizados, los rodamientos son cruciales para permitir el movimiento preciso de los brazos y las articulaciones, así como en los sistemas de transporte de materiales.</p>
+
+                <br> <img class="img1" src="https://i.postimg.cc/SKjDjtgx/image.png" alt=""> <br>
+                
+            </div>
+        </section>
+
+        <hr>
+        <br>
+
+        <section id="tipos" class="seccion">
+            <input type="checkbox" id="toggle2">
+            <label for="toggle2"><h3>Módulo 2</h3><h2>Problemas practicos</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p><strong>Problema 1</strong></p> 
+                <p>Supongamos que tienes una bicicleta y quieres reemplazar los rodamientos de la rueda trasera. La rueda trasera gira alrededor de un eje con un radio de 15 cm. Quieres calcular la velocidad angular de la rueda trasera cuando la bicicleta está viajando a una velocidad de 20 km/h.</p>
+                <br>
+                <img class="img1" src="https://i.postimg.cc/kXfQ8v66/image.png" alt="Rodamientos"> 
+                <p>Para resolver este problema, utilizaremos la fórmula para calcular la velocidad angular (
+                    𝜔):</p>
+                    <img class="img2" src="https://i.postimg.cc/nrnm9XnG/image.png" alt="">
+                    <p>donde: <br>
+
+                        <li>𝜔 es la velocidad angular en radianes por segundo</li>
+                        <li>𝑣 es la velocidad lineal en metros por segundo</li>
+                        <li>𝑟 es el radio de la rueda en metros</li></p>
+                        <p>Primero, necesitamos convertir la velocidad de la bicicleta de km/h a m/s. Sabemos que 1 km/h es igual a 1000/3600 m/s. Entonces, 20km/h es igual a 20x1000/3600 m/s, que es aproximadamente 50/9 m/s</p>
+                        <p>Ahora, podemos calcular la velocidad angular de la rueda trasera:</p>
+                        <img class="img2" src="https://i.postimg.cc/dQW3jH6Y/image.png" alt="">
+                        <p>Entonces, la velocidad angular de la rueda trasera es aproximadamente 37.04 rad/s cuando la bicicleta viaja a una velocidad de 20km/h. Esto nos da una idea de cómo los rodamientos permiten que la rueda gire suavemente incluso cuando la bicicleta está en movimiento.</p>
+            </div>
+        </section>
+
+        <hr>
+        <br>
+
+        <section id="formulas" class="seccion">
+            <input type="checkbox" id="toggle3">
+            <label for="toggle3"><h3>Módulo 3</h3><h2>Fórmulas y Conceptos Básicos</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p>Los rodamientos son componentes mecánicos que se utilizan para reducir la fricción entre dos partes móviles, lo que permite que las máquinas funcionen de manera más eficiente. Aquí hay algunas fórmulas comunes relacionadas con los rodamientos y el engranajes:</p>
+
+                <p><strong>1. Relación de Transmisión (i)</strong></p>
+                <img class="img4" src="https://i.postimg.cc/6Qxhc50F/image.png" alt="">
+                <p>Donde 
+                    𝑁1 es el número de dientes del engranaje impulsor y 
+                    𝑁2 es el número de dientes del engranaje conducido.
+                    
+                    </p>
+                    
+                    <p><strong>2. Velocidad Angular (ω):</strong></p>
+                    <img class="img3" src="https://i.postimg.cc/ZK3HddP6/image.png" alt="">
+                    <p>Donde: <br> 
+                        𝑁 es la velocidad en revoluciones por minuto (RPM)</p>
+                    
+                         <p><strong>3. Torque (T):</strong></p>
+                         <img class="img3" src="https://i.postimg.cc/bv69hH8f/image.png" alt="">
+                         <p>Donde: <br> 
+                            𝐹 es la fuerza aplicada y 
+                            𝑟 es la distancia desde el punto de aplicación de la fuerza al eje de rotación.</p>
+                         
+
+                            <p><strong>4. Potencia (P):</strong></p>
+                            <img class="img3" src="https://i.postimg.cc/hvVmf9Fj/image.png" alt="">
+                            <p>Donde: <br>
+                                𝑇 es el torque y 
+                                𝜔 es la velocidad angular.</p>
+            </div>
+        </section>
+
+        <hr>
+        <br>
+
+        <section id="glosario" class="seccion">
+            <input type="checkbox" id="toggle4">
+            <label for="toggle4"><h3>Módulo 4</h3><h2>Glosario de Términos</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p><strong>Rodamiento</strong></p>
+<p>Un dispositivo mecánico que reduce la fricción entre dos piezas que se mueven entre sí. También conocido como cojinete o balero.</p>
+
+<p><strong>Rodamiento de bolas</strong></p>
+<p>Un tipo de rodamiento que utiliza bolas para reducir la fricción entre las superficies de contacto. Son comunes en una amplia variedad de aplicaciones debido a su capacidad para soportar cargas radiales y axiales.</p>
+
+<p><strong>Rodamiento de rodillos</strong></p>
+<p>Similar al rodamiento de bolas, pero en lugar de bolas, utiliza rodillos cilíndricos o cónicos para soportar cargas radiales y axiales.</p>
+
+<p><strong>Velocidad angular</strong></p>
+<p>La velocidad a la que un objeto gira alrededor de un eje, medida en radianes por segundo (rad/s).</p>
+
+<p><strong>Radio</strong></p>
+<p>La distancia desde el centro de un círculo o esfera hasta su borde. En el contexto de los rodamientos, se refiere al radio de la pista sobre la cual se desplazan las bolas o los rodillos.</p>
+
+<p><strong>Fricción</strong></p>
+<p>La resistencia al movimiento entre dos superficies en contacto. Los rodamientos se utilizan para reducir la fricción y permitir un movimiento suave.</p>
+
+<p><strong>Carga radial</strong></p>
+<p>Una fuerza aplicada perpendicularmente al eje de rotación de un rodamiento. Los rodamientos deben ser capaces de soportar cargas radiales para mantener la estabilidad y el rendimiento.</p>
+
+<p><strong>Carga axial</strong></p>
+<p>Una fuerza aplicada paralela al eje de rotación de un rodamiento. Los rodamientos también deben ser capaces de soportar cargas axiales para mantener la integridad estructural y la funcionalidad.</p>
+
+<p><strong>Mantenimiento preventivo</strong></p>
+<p>El conjunto de actividades realizadas regularmente para mantener los rodamientos y otros equipos en buenas condiciones de funcionamiento y prevenir fallos prematuros.</p>
+
+<p><strong>Industria automotriz</strong></p>
+<p>El sector industrial que se encarga de diseñar, fabricar y comercializar vehículos de motor, incluidos automóviles, camiones, autobuses y motocicletas. Los rodamientos son componentes fundamentales en numerosos sistemas de vehículos.</p>
+
+<p><strong>Industria aeroespacial</strong></p>
+<p>El sector industrial que se dedica al diseño, fabricación y operación de aeronaves y vehículos espaciales. Los rodamientos son críticos en una amplia gama de aplicaciones aeroespaciales, desde motores de aviones hasta sistemas de control de vuelo.</p>
+
+<p><strong>Industria naval y offshore</strong></p>
+<p>El ámbito que abarca la construcción, operación y mantenimiento de buques, plataformas petrolíferas y otras estructuras marítimas. Los rodamientos son esenciales en equipos navales y offshore debido a su resistencia a la corrosión y su capacidad para soportar cargas en entornos marinos hostiles.</p>
+
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
