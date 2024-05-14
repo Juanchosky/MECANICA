@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Rodamiento</title>
+    <style>
+        /* Estilos aquí */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .seccion {
+            padding: 11px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+    
+        }
+
+        h2 {
+            color: #ff5252;
+            font-size: 16px;
+            cursor: pointer; /* Agregado para el efecto de clic */
+            display: inline-block; /* Añadido */
+        }
+
+        h3 {
+            color: #bfbfbf;
+            font-size: 16px;
+            margin-top: 0;
+            display: inline-block; /* Añadido */
+            margin-right: 10px; /* Añadido */
+        }
+
+        strong{
+            color: #ff5252;
+        }
+        
+        p {
+            color: #ddd;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        li {
+            margin-bottom: 5px;
+            color: rgb(211, 207, 201);
+            font-size: 14px;
+        }
+
+        .formula {
+            color: #f90;
+            font-style: italic;
+        }
+
+        .img1 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 440px;
+            opacity: 81%;
+        }
+
+        .img2 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 140px;
+            opacity: 600%;
+            margin-left: 0px;
+        }
+
+        .img3 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 108px;
+            opacity: 600%;
+            margin-left: 0px;
+        }
+
+        .img4 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 90px;
+            opacity: 600%;
+            margin-left: 0px;
+        }
+
+        .response {
+            margin-top: 10px;
+            color: #ddd;
+        }
+
+        hr{
+            border: none; /* Elimina el borde predeterminado */
+            height: 1px; /* Define la altura de la línea */
+            background-color: #4f4f4f; /* Color de fondo de la línea */
+            width: 90%;
+        }
+
+        .term:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .str1{
+            color: #ffffffbf;
+        }
+
+        /* Estilos para el menú desplegable */
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out; /* Cambio de velocidad de transición */
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"] + label {
+            cursor: pointer;
+            position: relative; /* Añadido */
+        }
+
+        input[type="checkbox"]:checked + label + .content {
+            max-height: 100%; /* Ajusta según el contenido máximo */
+        }
+
+        .arrow-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease; /* Añadido */
+        }
+
+        input[type="checkbox"]:checked + label .arrow-icon {
+            transform: translateY(-50%) rotate(180deg); /* Añadido */
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="introduccion" class="seccion">
+            <input type="checkbox" id="toggle1">
+            <label for="toggle1"><h3>Módulo 1</h3><h2>Engranajes</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p>Los engranajes se utilizan para transmitir movimiento rotacional y potencia entre ejes. Esto se logra mediante el acoplamiento de dientes en los engranajes, que encajan entre sí y permiten la transferencia de movimiento. </p>
+                <br><img class="img1" src="https://i.postimg.cc/jdRZ05YT/image.png" alt=""><br>
+                <p><strong>Integración de Rodamientos en Sistemas de Engranajes</strong></p>
+                <p>Los sistemas de <strong class="str1">rodamientos</strong> desempeñan un papel esencial en la optimización del rendimiento de los engranajes al reducir la fricción, proporcionar soporte de carga y mantener una alineación precisa entre los ejes, lo que contribuye a una transmisión suave y eficiente del movimiento.</p>
+                <p>La integración de rodamientos, como los de bolas, rodillos o cónicos, en los ejes de los engranajes ayuda a minimizar el desgaste, prolongar la vida útil del sistema y reducir la necesidad de mantenimiento. Además, la selección adecuada de rodamientos y la lubricación adecuada son cruciales para garantizar un funcionamiento confiable en una variedad de aplicaciones industriales y mecánicas.</p>
+                <br> <img class="img1" src="https://i.postimg.cc/sXZ0X0TR/image.png" alt="Rodamientos">
+                <br>
+            </div>
+        </section>
+
+        <hr>
+        <br>
+
+        <section id="tipos" class="seccion">
+            <input type="checkbox" id="toggle2">
+            <label for="toggle2"><h3>Módulo 2</h3><h2>Tipos de engranajes</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p>Existen varios tipos de engranajes, cada uno con características específicas que los hacen adecuados para diferentes aplicaciones:</p> <br>
+                
+                <li><strong>Engranajes Rectos</strong></li>
+                <p>Son los más comunes y simples, con dientes rectos que se proyectan perpendicularmente al eje del engranaje. Transmiten movimiento de manera suave y eficiente, pero pueden generar ruido y vibraciones en altas velocidades.</p>
+                <br>
+                <img class="img1" src="https://i.postimg.cc/Sx29wFRq/image.png" alt="Rodamientos"> <br>  <br>
+                
+                <li><strong>Engranajes Helicoidales</strong></li>
+                <p>Tienen dientes inclinados en forma de hélice alrededor del eje del engranaje. Esto proporciona un contacto gradual entre los dientes, lo que reduce el ruido y la vibración en comparación con los engranajes rectos. Son ideales para aplicaciones de alta velocidad y cargas pesadas.</p> <br>
+                
+                <img class="img1" src="https://i.postimg.cc/P5QLGXHg/image.png" alt="Rodamientos"> <br> <br> 
+                <li><strong>Engranajes Cónicos</strong></li>
+                <p>Tienen dientes en forma de cono y se utilizan para transmitir movimiento entre ejes que se cruzan o se intersectan. Son comunes en sistemas de transmisión de potencia en vehículos y maquinaria.</p> <br>
+                <img class="img1" src="https://i.postimg.cc/mgg4DBCf/image.png" alt="Rodamientos"> <br> <br>
+                <li><strong>Engranajes Cónicos Helicoidales</strong></li>
+                <p>Combinan las características de los engranajes cónicos y helicoidales, lo que proporciona una transmisión de potencia suave y silenciosa, especialmente en aplicaciones donde los ejes no son paralelos.</p> <br>
+                <img class="img1" src="https://i.postimg.cc/d35WSP1r/image.png" alt="Rodamientos"> <br> <br>
+                <li><strong>Engranajes de Tornillo Sin Fin</strong></li>
+                <p>Consisten en un tornillo que engrana con una rueda dentada. Son utilizados para transmitir movimiento entre ejes que se cruzan a ángulos rectos y para proporcionar una relación de transmisión muy alta.</p> <br>
+                <img class="img1" src="https://i.postimg.cc/rFYn1k7L/image.png" alt="Tipos de Rodamientos"> <br>
+            </div>
+        </section>
+
+        <hr>
+        <br>
+
+        <section id="formulas" class="seccion">
+            <input type="checkbox" id="toggle3">
+            <label for="toggle3"><h3>Módulo 3</h3><h2>Fórmulas y Conceptos Básicos</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p>Los rodamientos son componentes mecánicos que se utilizan para reducir la fricción entre dos partes móviles, lo que permite que las máquinas funcionen de manera más eficiente. Aquí hay algunas fórmulas comunes relacionadas con los rodamientos y el engranajes:</p>
+
+                <p><strong>1. Relación de Transmisión (i)</strong></p>
+                <img class="img4" src="https://i.postimg.cc/6Qxhc50F/image.png" alt="">
+                <p>Donde 
+                    𝑁1 es el número de dientes del engranaje impulsor y 
+                    𝑁2 es el número de dientes del engranaje conducido.
+                    
+                    </p>
+                    
+                    <p><strong>2. Velocidad Angular (ω):</strong></p>
+                    <img class="img3" src="https://i.postimg.cc/ZK3HddP6/image.png" alt="">
+                    <p>Donde: <br> 
+                        𝑁 es la velocidad en revoluciones por minuto (RPM)</p>
+                    
+                         <p><strong>3. Torque (T):</strong></p>
+                         <img class="img3" src="https://i.postimg.cc/bv69hH8f/image.png" alt="">
+                         <p>Donde: <br> 
+                            𝐹 es la fuerza aplicada y 
+                            𝑟 es la distancia desde el punto de aplicación de la fuerza al eje de rotación.</p>
+                         
+
+                            <p><strong>4. Potencia (P):</strong></p>
+                            <img class="img3" src="https://i.postimg.cc/hvVmf9Fj/image.png" alt="">
+                            <p>Donde: <br>
+                                𝑇 es el torque y 
+                                𝜔 es la velocidad angular.</p>
+            </div>
+        </section>
+
+        <hr>
+        <br>
+
+        <section id="glosario" class="seccion">
+            <input type="checkbox" id="toggle4">
+            <label for="toggle4"><h3>Módulo 4</h3><h2>Glosario de Términos</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p><strong>Engranaje</strong></p>
+                <p>Dispositivo mecánico compuesto por una serie de dientes que engranan entre sí para transmitir movimiento y potencia entre ejes rotativos.</p>
+                
+                <p><strong>Engranaje Impulsor</strong></p>
+                <p>El engranaje que transmite el movimiento al engranaje conducido.</p>
+                
+                <p><strong>Engranaje Conducido</strong></p>
+                <p>El engranaje que recibe el movimiento del engranaje impulsor.</p>
+                
+                <p><strong>Relación de Transmisión</strong></p>
+                <p>La relación entre el número de dientes del engranaje impulsor y el número de dientes del engranaje conducido.</p>
+                
+                <p><strong>Velocidad Angular</strong></p>
+                <p>La velocidad de rotación de un engranaje, medida en radianes por segundo.</p>
+                
+                <p><strong>Torque</strong></p>
+                <p>La fuerza que tiende a hacer girar un objeto alrededor de un eje, medida en unidades de fuerza por distancia (N·m).</p>
+                
+                <p><strong>Potencia</strong></p>
+                <p>La cantidad de trabajo realizado por unidad de tiempo, medida en vatios (W).</p>
+                
+                <p><strong>Módulo</strong></p>
+                <p>Una medida del tamaño de los dientes de los engranajes, calculada como el cociente entre el diámetro primitivo y el número de dientes del engranaje.</p>
+                
+                <p><strong>Diámetro Primitivo</strong></p>
+                <p>El diámetro de la circunferencia teórica que pasa por los puntos de contacto entre dos engranajes encajados.</p>
+                
+                <p><strong>Relación de Contacto</strong></p>
+                <p>La proporción de los dientes del engranaje que están en contacto en un momento dado.</p>
+                
+                <p><strong>Engranaje Recto</strong></p>
+                <p>Un tipo de engranaje cuyos dientes son rectos y están dispuestos perpendicularmente al eje del engranaje.</p>
+                
+                <p><strong>Engranaje Helicoidal</strong></p>
+                <p>Un tipo de engranaje cuyos dientes están inclinados en forma de hélice alrededor del eje del engranaje.</p>
+                
+                <p><strong>Engranaje Cónico</strong></p>
+                <p>Un tipo de engranaje cuyos dientes están dispuestos en forma de cono.</p>
+                
+                <p><strong>Engranaje Planetario</strong></p>
+                <p>Un tipo de engranaje compuesto por un engranaje central (el sol), engranajes que giran alrededor de él (los planetas) y un engranaje exterior (la corona).</p>
+                
+                <p><strong>Engranaje de Tornillo Sin Fin</strong></p>
+                <p>Un tipo de engranaje que consiste en un tornillo que engrana con una rueda dentada.</p>
+                
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
