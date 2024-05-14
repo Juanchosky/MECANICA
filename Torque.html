@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Rodamiento</title>
+    <style>
+        /* Estilos aquí */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .seccion {
+            padding: 11px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+    
+        }
+
+        h2 {
+            color: #ff5252;
+            font-size: 16px;
+            cursor: pointer; /* Agregado para el efecto de clic */
+            display: inline-block; /* Añadido */
+        }
+
+        h3 {
+            color: #bfbfbf;
+            font-size: 16px;
+            margin-top: 0;
+            display: inline-block; /* Añadido */
+            margin-right: 10px; /* Añadido */
+        }
+
+        strong{
+            color: #ff5252;
+        }
+        
+        p {
+            color: #ddd;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        li {
+            margin-bottom: 5px;
+            color: rgb(211, 207, 201);
+            font-size: 14px;
+        }
+
+        .formula {
+            color: #f90;
+            font-style: italic;
+        }
+
+        .img1 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 440px;
+            opacity: 81%;
+        }
+
+        .img2 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 140px;
+            opacity: 600%;
+            margin-left: 0px;
+        }
+
+        .img3 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 108px;
+            opacity: 600%;
+            margin-left: 0px;
+        }
+
+        .img4 {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 90px;
+            opacity: 600%;
+            margin-left: 0px;
+        }
+
+        .response {
+            margin-top: 10px;
+            color: #ddd;
+        }
+
+        hr{
+            border: none; /* Elimina el borde predeterminado */
+            height: 1px; /* Define la altura de la línea */
+            background-color: #4f4f4f; /* Color de fondo de la línea */
+            width: 90%;
+        }
+
+        .term:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .str1{
+            color: #ffffffbf;
+        }
+
+        /* Estilos para el menú desplegable */
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out; /* Cambio de velocidad de transición */
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"] + label {
+            cursor: pointer;
+            position: relative; /* Añadido */
+        }
+
+        input[type="checkbox"]:checked + label + .content {
+            max-height: 100%; /* Ajusta según el contenido máximo */
+        }
+
+        .arrow-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease; /* Añadido */
+        }
+
+        input[type="checkbox"]:checked + label .arrow-icon {
+            transform: translateY(-50%) rotate(180deg); /* Añadido */
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="introduccion" class="seccion">
+            <input type="checkbox" id="toggle1">
+            <label for="toggle1"><h3>Módulo 1</h3><h2>Torque</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p>El torque, también conocido como momento de fuerza, es una medida de la tendencia de una fuerza a girar un objeto alrededor de un eje o punto de pivote.</p> 
+                <p>En los rodamientos, el torque se aplica para girar el eje alrededor del cual se monta el rodamiento. En los engranajes, el torque se transfiere de un engranaje a otro a través del contacto de sus dientes, y la relación de engranajes determina cómo se amplifica o reduce el torque entre los ejes de entrada y salida.</p>
+                <p>El cálculo del torque específico en un sistema de rodamiento depende de varios factores, como la geometría del sistema, la distribución de carga y las condiciones de operación. Generalmente, se requiere un análisis detallado teniendo en cuenta estos factores para calcular el torque con precisión.</p>
+                <br>
+                <img class="img1" src="https://i.postimg.cc/W3y0qWqs/image.png" alt="Rodamientos"> <br>
+            </div>
+        </section>
+
+        <hr>
+        <br>
+
+        <section id="tipos" class="seccion">
+            <input type="checkbox" id="toggle2">
+            <label for="toggle2"><h3>Módulo 2</h3><h2>Tipos de torque en rodamientos</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p>En sistemas de rodamiento, se pueden identificar varios tipos de torque, cada uno con características y efectos particulares. Aquí hay algunos tipos comunes de torque en sistemas de rodamiento:</p> <br>
+                
+                <li><strong>Torque de arranque estático</strong></li>
+                <p>Este es el torque necesario para iniciar el movimiento del eje desde una posición estática. Debido a la fricción inicial entre las superficies de los rodamientos y el eje, el torque de arranque estático tiende a ser mayor que el torque de funcionamiento una vez que el eje está en movimiento.</p>
+                <br>
+                <img class="img1" src="https://i.postimg.cc/GhCxFfSp/image.png" alt="Rodamientos"> <br>  <br>
+                
+                <li><strong>Torque de funcionamiento</strong></li>
+                <p>Es el torque necesario para mantener el movimiento del eje una vez que ha comenzado a girar. Este torque puede variar dependiendo de la carga, la velocidad de rotación y otros factores que afectan la resistencia al movimiento del sistema.</p> <br>
+                
+                <img class="img1" src="https://i.postimg.cc/L5BfQH08/image.png" alt="Rodamientos"> <br> <br> 
+                <li><strong>Torque de parada</strong></li>
+                <p> Este torque es el requerido para detener el movimiento del eje. Puede ser necesario aplicar un torque de parada más alto para superar el momento de inercia del sistema en movimiento.</p> <br>
+                <img class="img1" src="https://i.postimg.cc/VL0Ptdpw/image.png" alt="Rodamientos"> <br> <br>
+                <li><strong>Torque de carga</strong></li>
+                <p> Se refiere al torque adicional generado por la carga que se aplica al sistema de rodamiento. Este torque puede variar dependiendo del tipo de carga (radial, axial, combinada) y su magnitud.</p> <br>
+                <img class="img1" src="https://i.postimg.cc/SxpQN6s3/image.png" alt="Rodamientos"> <br> <br>
+                <li><strong>Torque debido a la fricción</strong></li>
+                <p>Es el torque causado por la fricción entre las superficies de los rodamientos y el eje. Este tipo de torque puede ser minimizado utilizando lubricantes adecuados y optimizando el diseño del sistema de rodamiento.</p> <br>
+                <img class="img1" src="https://i.postimg.cc/3Jf6tYMB/image.png" alt="Tipos de Rodamientos"> <br>
+            </div>
+        </section>
+
+        <hr>
+        <br>
+
+        <section id="formulas" class="seccion">
+            <input type="checkbox" id="toggle3">
+            <label for="toggle3"><h3>Módulo 3</h3><h2>Fórmulas y Conceptos Básicos</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p>Los rodamientos son componentes mecánicos que se utilizan para reducir la fricción entre dos partes móviles, lo que permite que las máquinas funcionen de manera más eficiente. Aquí hay algunas fórmulas comunes relacionadas con los rodamientos y el torque:</p>
+
+                <p><strong>1. Fórmula básica del torque:</strong></p>
+                <p><strong class="str1">τ=F×r</strong></p>
+                <p>Donde: <br>
+
+                    <li>𝜏 = es el torque (en unidades de fuerza por distancia, como N·m o lb·ft).</li>
+                    <li>𝐹 = es la fuerza aplicada perpendicular al eje de rotación (en unidades de fuerza, como Newtons o libras).</li>
+                    <li>𝑟 = es la distancia perpendicular desde el punto de aplicación de la fuerza hasta el eje de rotación (en unidades de longitud, como metros o pies).</li></p>
+                    
+                    <p><strong>2. Torque de arranque estático:</strong></p>
+                    <p>El torque de arranque estático puede ser mayor que el torque de funcionamiento debido a la fricción inicial. No hay una fórmula específica para esto, ya que depende de diversos factores como la fricción, la geometría del rodamiento, etc.</p>
+                    
+                         <p><strong>3. Torque de funcionamiento:</strong></p>
+                         <p>El torque de funcionamiento puede calcularse con la fórmula básica del torque, considerando las fuerzas y distancias relevantes para las condiciones de operación específicas.</p>
+                         
+
+                            <p><strong>4. Torque de parada:</strong></p>
+                            <p>El torque de parada puede calcularse de manera similar al torque de funcionamiento, pero teniendo en cuenta las fuerzas de inercia y otras fuerzas que se oponen al movimiento del eje.</p>
+
+                            <p><strong>5. Torque debido a la carga</strong></p>
+                            <p>El torque debido a la carga puede ser calculado teniendo en cuenta las fuerzas radiales y axiales aplicadas al rodamiento, así como la distancia desde el centro de rotación.</p>
+
+                            <p><strong>6. Torque debido a la fricción</strong></p>
+                            <p>El torque debido a la fricción puede ser estimado considerando el coeficiente de fricción entre las superficies del rodamiento y el eje, así como la carga aplicada y la velocidad de rotación.</p>
+
+                            <p><strong>7. Torque debido a la velocidad de rotación</strong></p>
+                            <p>Este tipo de torque puede ser más complejo de calcular y puede requerir consideraciones adicionales, como las fuerzas centrífugas generadas por la velocidad de rotación.</p>
+                            
+                
+            </div>
+        </section>
+
+        <hr>
+        <br>
+
+        <section id="glosario" class="seccion">
+            <input type="checkbox" id="toggle4">
+            <label for="toggle4"><h3>Módulo 4</h3><h2>Glosario de Términos</h2><img class="arrow-icon" src="https://img.icons8.com/material-outlined/24/ffffff/expand-arrow.png"/></label>
+            <div class="content">
+                <p><strong>Rodamiento</strong></p>
+<p>Elemento mecánico que reduce la fricción entre dos superficies en movimiento relativo.</p>
+
+<p><strong>Velocidad de Deslizamiento</strong></p>
+<p>Velocidad relativa entre las superficies de contacto de un rodamiento.</p>
+
+<p><strong>Carga Dinámica Básica</strong></p>
+<p>Carga que un rodamiento puede llevar durante un número especificado de revoluciones antes de fallar debido a fatiga.</p>
+
+<p><strong>Torque</strong></p>
+<p>Medida de la fuerza rotacional aplicada a un objeto alrededor de un eje.</p>
+
+<p><strong>Fricción</strong></p>
+<p>Resistencia al movimiento entre dos superficies en contacto.</p>
+
+<p><strong>Lubricación</strong></p>
+<p>Proceso de aplicar un lubricante entre las superficies de contacto de los rodamientos y el eje para reducir la fricción y el desgaste.</p>
+
+<p><strong>Inercia</strong></p>
+<p>Resistencia de un objeto al cambio en su estado de movimiento.</p>
+
+<p><strong>Momento de Inercia</strong></p>
+<p>Medida de la distribución de masa de un objeto en relación con un eje de rotación.</p>
+
+<p><strong>Arranque Estático</strong></p>
+<p>Proceso de iniciar el movimiento del eje desde una posición estática.</p>
+
+<p><strong>Velocidad de Rotación</strong></p>
+<p>Velocidad a la que gira el eje de un sistema de rodamiento.</p>
+
+<p><strong>Carga Radial</strong></p>
+<p>Fuerza aplicada perpendicular al eje de rotación de un sistema de rodamiento.</p>
+
+<p><strong>Carga Axial</strong></p>
+<p>Fuerza aplicada paralela al eje de rotación de un sistema de rodamiento.</p>
+
+<p><strong>Coeficiente de Fricción</strong></p>
+<p>Valor que indica la cantidad de fricción entre dos superficies en contacto.</p>
+
+<p><strong>Precisión del Montaje</strong></p>
+<p>Calidad y exactitud con la que se ensamblan los componentes de un sistema de rodamiento.</p>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
