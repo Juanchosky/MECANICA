@@ -31,6 +31,14 @@
     
         }
 
+        .seccion1 {
+            
+            padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    
+        }
+
         h2 {
             color: #ff5252;
             font-size: 16px;
@@ -161,10 +169,33 @@
         input[type="checkbox"]:checked + label .arrow-icon {
             transform: translateY(-50%) rotate(180deg); /* Añadido */
         }
+        .audio-container {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #000000;
+    margin-top: 10px;
+}
+
+.audio-container iframe {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #000000;
+}
+
+        
     </style>
 </head>
 <body>
 
+    <section id="introduccion" class="seccion1">
+    <h2>Reproducir IA</h2>
+    <div class="audio-container">
+        <iframe src="https://drive.google.com/file/d/1Rfges347LLLiEj5nAAVXvgl67vI2XaEn/preview" width="350" height="50" allow="autoplay"></iframe>
+    </div>    
+</section>
+     
     <main>
         <section id="introduccion" class="seccion">
             <input type="checkbox" id="toggle1">
